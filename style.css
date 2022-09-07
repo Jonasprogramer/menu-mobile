@@ -44,14 +44,33 @@ a:hover{
 /*Menu haburguer*/
 #btn-mobile{
     display: none;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
 }
+#btn-mobile:hover{
+    background-color: #ddd;
+}
+
 
 @media only screen and (max-width: 600px) {
     #btn-mobile{
         display:block;
     }
-
+    .header{
+        display: block;
+    }
+    .top-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav{
+        background-color: #ddd;
+    }
     .menu{
-        display: none;
+        display: block;
+        position:relative;
+        top: -5px;
     }
 }

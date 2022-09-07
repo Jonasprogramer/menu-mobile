@@ -1,1 +1,0 @@
-const btnMobile = document.getElementById('btn-mobile');
