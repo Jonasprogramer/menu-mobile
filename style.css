@@ -69,7 +69,7 @@ a:hover{
         background-color: #ddd;
     }
     .menu{
-        display: block;
+        display: none; /*alterar o display mostrar o menu*/
         position:relative;
         top: -5px;
     }

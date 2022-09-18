@@ -13,14 +13,14 @@
     <header class="header">
       <div class="top-header">
         <a href="#" class="logo">Logo</a>
-        <button id="btn-mobile" onclick="clickMenu()">
-          <span class="material-symbols-outlined">
+        <button id="btn-mobile">
+          <span class="material-symbols-outlined" onclick="clickMenu()">
             menu
           </span>
         </button>
       </div>
         <nav id="nav">           
-          <ul class="menu">
+          <ul class="menu" id="menu">
             <li><a href="#">Sobre</a></li>
             <li><a href="#">Produtos</a></li>
             <li><a href="#">Portifolio</a></li>
@@ -28,11 +28,14 @@
           </ul>
         </nav>
       </header>
-
       <script>
-          function clickMenu() {
-            alert('ola')
+        function clickMenu(){
+          if(menu.style.display == 'block'){
+            menu.style.display = 'none';
+          }else{
+            menu.style.display = 'block';
           }
+        }
       </script>
 </body>
 </html>
